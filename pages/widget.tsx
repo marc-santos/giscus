@@ -24,6 +24,8 @@ export async function getServerSideProps({ query, res }: GetServerSidePropsConte
   const categoryId = (query.categoryId as string) || '';
   const description = (query.description as string) || '';
   const reactionsEnabled = Boolean(+query.reactionsEnabled);
+  const showBranding =
+    query.showBranding === undefined ? true : Boolean(+(query.showBranding as string));
   const emitMetadata = Boolean(+query.emitMetadata);
   const inputPosition = (query.inputPosition === 'top' ? 'top' : 'bottom') as InputPosition;
   const theme = ((query.theme as string) || 'preferred_color_scheme') as Theme;
@@ -74,6 +76,7 @@ export async function getServerSideProps({ query, res }: GetServerSidePropsConte
       categoryId,
       description,
       reactionsEnabled,
+      showBranding,
       emitMetadata,
       inputPosition,
       defaultCommentOrder,
@@ -96,6 +99,7 @@ export default function WidgetPage({
   categoryId,
   description,
   reactionsEnabled,
+  showBranding,
   emitMetadata,
   inputPosition,
   defaultCommentOrder,
@@ -116,6 +120,7 @@ export default function WidgetPage({
     number,
     strict,
     reactionsEnabled,
+    showBranding,
     emitMetadata,
     inputPosition,
     defaultCommentOrder,

@@ -1,8 +1,12 @@
 # Advanced usage
 
-This guide highlights advanced usage of giscus through additional
+This guide highlights advanced usage of Giscussions through additional
 configurations.
 
+## Contents
+
+- [Giscussions-Specific Features](#giscussions-specific-features)
+  - [`data-show-branding`](#data-show-branding-giscussions-specific)
 - [`giscus.json`](#giscusjson)
   - [`origins`](#origins)
   - [`originsRegex`](#originsregex)
@@ -17,6 +21,36 @@ configurations.
   - [`IMetadataMessage`](#imetadatamessage)
 - [parent-to-giscus `message` events](#parent-to-giscus-message-events)
   - [`ISetConfigMessage`](#isetconfigmessage)
+
+## Giscussions-Specific Features
+
+These features are specific to Giscussions and not available in the upstream
+giscus project.
+
+### `data-show-branding` (Giscussions-specific)
+
+You can control the branding text shown below the comments area by setting
+`data-show-branding` on the `<script>` tag.
+
+- `data-show-branding="1"` (default): show the branding text.
+- `data-show-branding="0"`: hide the branding text.
+
+For example:
+
+```html
+<script src="https://your-fork/client.js"
+  data-repo="owner/repo"
+  data-repo-id="REPO_ID"
+  data-category-id="CATEGORY_ID"
+  data-mapping="pathname"
+  data-show-branding="0"
+  crossorigin="anonymous"
+  async>
+</script>
+```
+
+You can also control this dynamically using the `ISetConfigMessage` interface
+in [parent-to-giscus message events](#isetconfigmessage).
 
 ## `giscus.json`
 
@@ -298,6 +332,7 @@ interface ISetConfigMessage {
     number?: number;
     strict?: boolean;
     reactionsEnabled?: boolean;
+    showBranding?: boolean;
     emitMetadata?: boolean;
     inputPosition?: InputPosition;
     lang?: AvailableLanguage;
@@ -313,6 +348,7 @@ sendMessage({
   setConfig: {
     theme: 'https://giscus.app/themes/custom_example.css',
     reactionsEnabled: false,
+    showBranding: false,
   }
 });
 ```

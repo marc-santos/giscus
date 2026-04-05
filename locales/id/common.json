@@ -21,7 +21,7 @@
   "loading": "Memuat",
   "loadingComments": "Memuat komentar…",
   "loadingPreview": "Memuat pratinjau…",
-  "poweredBy": "– diberdayakan oleh <a>giscus</a>",
+  "poweredBy": "diberdayakan oleh <a>giscus</a>",
   "oldest": "Terlama",
   "newest": "Terbaru",
   "showPreviousReplies": {
@@ -46,7 +46,6 @@
   "cancel": "Batal",
   "signInWithGitHub": "Masuk dengan GitHub",
   "writeAReply": "Tulis balasan",
-
   "upvote": "Beri suara positif",
   "youMustBeSignedInToUpvote": "Anda harus masuk untuk memberi suara.",
   "addReactions": "Tambahkan reaksi",
@@ -61,7 +60,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Tidak ada pratinjau",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Tertawa",
@@ -70,7 +68,6 @@
   "HEART": "Suka",
   "ROCKET": "Roket",
   "EYES": "Mata",
-
   "COLLABORATOR": "Kolaborator",
   "CONTRIBUTOR": "Kontributor",
   "FIRST_TIMER": "Pemula",

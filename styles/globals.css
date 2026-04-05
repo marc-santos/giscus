@@ -32,6 +32,11 @@ a:hover {
   @apply pb-2 border-b;
 }
 
+.markdown h1:last-child,
+.markdown h2:last-child {
+  @apply pb-0 border-0;
+}
+
 .markdown h1 {
   @apply text-3xl;
 }
@@ -79,18 +84,19 @@ a:hover {
 }
 
 .markdown pre,
-.markdown .highlight pre, {
-  @apply p-4 overflow-auto text-xs rounded-md;
+.markdown .highlight pre,
+{
+@apply p-4 overflow-auto text-xs rounded-md;
 
-  line-height: 1.45;
-  background-color: var(--color-canvas-subtle, var(--color-bg-tertiary));
+line-height: 1.45;
+background-color: var(--color-canvas-subtle, var(--color-bg-tertiary));
 }
 
 .markdown .highlight pre {
   @apply mb-0 break-normal;
 }
 
-.markdown pre > code {
+.markdown pre>code {
   background: transparent;
 }
 
@@ -137,11 +143,11 @@ a:hover {
   @apply list-decimal;
 }
 
-.markdown li + li {
+.markdown li+li {
   @apply mt-1;
 }
 
-.markdown li > p {
+.markdown li>p {
   @apply mt-4;
 }
 
@@ -189,18 +195,18 @@ a:hover {
   font-family: monospace;
 }
 
-.markdown sup > a::before {
+.markdown sup>a::before {
   content: "[";
 }
 
-.markdown sup > a::after {
+.markdown sup>a::after {
   content: "]";
 }
 
-.markdown > :last-child {
+.markdown> :last-child {
   @apply mb-0;
 }
 
-.markdown > :first-child {
+.markdown> :first-child {
   @apply mt-0;
 }

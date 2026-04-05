@@ -42,6 +42,7 @@ interface IConfigContext {
   number: number;
   strict: boolean;
   reactionsEnabled: boolean;
+  showBranding: boolean;
   emitMetadata: boolean;
   inputPosition: InputPosition;
   defaultCommentOrder: CommentOrder;
@@ -58,6 +59,7 @@ export const ConfigContext = createContext<IConfigContext>({
   number: 0,
   strict: false,
   reactionsEnabled: true,
+  showBranding: true,
   emitMetadata: false,
   inputPosition: 'bottom',
   defaultCommentOrder: 'oldest',

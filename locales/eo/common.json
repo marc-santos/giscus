@@ -31,7 +31,7 @@
   "loading": "Ŝargante",
   "loadingComments": "Ŝargante komentojn...",
   "loadingPreview": "Ŝargante antaŭrigardon...",
-  "poweredBy": "– funkciigita per <a>giscus</a>",
+  "poweredBy": "funkciigita per <a>giscus</a>",
   "oldest": "Plej malnova",
   "newest": "Plej nova",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Malfaru",
   "signInWithGitHub": "Ensalutu per GitHub",
   "writeAReply": "Skribu respondon",
-
   "upvote": "Ŝatu",
   "youMustBeSignedInToUpvote": "Vi devas esti ensalutinta por ŝati.",
   "addReactions": "Aldonu reagojn",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoĝio",
   "nothingToPreview": "Nenio por antaŭrigardi",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Ridi",
@@ -86,7 +84,6 @@
   "HEART": "Amo",
   "ROCKET": "Raketo",
   "EYES": "Okuloj",
-
   "COLLABORATOR": "Kunlaboranto",
   "CONTRIBUTOR": "Kontribuanto",
   "FIRST_TIMER": "Unuafoje vizitanto",

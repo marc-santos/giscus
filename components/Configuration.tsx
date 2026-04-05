@@ -19,6 +19,7 @@ interface IDirectConfig {
   theme: Theme;
   themeUrl: Theme;
   reactionsEnabled: boolean;
+  showBranding: boolean;
   emitMetadata: boolean;
   inputPosition: InputPosition;
   lang: AvailableLanguage;
@@ -428,6 +429,21 @@ export default function Configuration({ directConfig, onDirectConfigChange }: IC
       <div className="form-checkbox">
         <input
           type="checkbox"
+          id="showBranding"
+          checked={directConfig.showBranding}
+          value={`${+directConfig.showBranding}`}
+          onChange={(event) => onDirectConfigChange('showBranding', event.target.checked)}
+        ></input>
+        <label htmlFor="showBranding">
+          <strong>{t('showPoweredByGiscus')}</strong>
+        </label>
+        <p className="color-text-secondary text-xs mb-0">
+          {t('poweredByGiscusShownBelowComments')}
+        </p>
+      </div>
+      <div className="form-checkbox">
+        <input
+          type="checkbox"
           id="emitMetadata"
           checked={directConfig.emitMetadata}
           value={`${+directConfig.emitMetadata}`}
@@ -606,6 +622,9 @@ export default function Configuration({ directConfig, onDirectConfigChange }: IC
           ) : null}
           <span className="pl-c1">data-reactions-enabled</span>={'"'}
           <span className="pl-s">{Number(directConfig.reactionsEnabled)}</span>
+          {'"\n        '}
+          <span className="pl-c1">data-show-branding</span>={'"'}
+          <span className="pl-s">{Number(directConfig.showBranding)}</span>
           {'"\n        '}
           <span className="pl-c1">data-emit-metadata</span>={'"'}
           <span className="pl-s">{Number(directConfig.emitMetadata)}</span>

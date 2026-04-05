@@ -31,7 +31,7 @@
   "loading": "កំពុងផ្ទុក",
   "loadingComments": "កំពុងផ្ទុកមតិ…",
   "loadingPreview": "កំពុងផ្ទុកការមើលលទ្ធផលទុកមុន…",
-  "poweredBy": "– ដំណើរការដោយ <a>giscus</a>",
+  "poweredBy": "ដំណើរការដោយ <a>giscus</a>",
   "oldest": "ចាស់បំផុត",
   "newest": "ថ្មីបំផុត",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "បោះបង់",
   "signInWithGitHub": "ចូលគណនី GitHub",
   "writeAReply": "សរសេរការឆ្លើយតប",
-
   "upvote": "យល់ស្រប",
   "youMustBeSignedInToUpvote": "អ្នកត្រូវតែចូលគណនីដើម្បីអាចដាក់ការយល់ស្របបាន",
   "addReactions": "បន្ថែមប្រតិកម្ម",
@@ -77,7 +76,6 @@
   },
   "emoji": "រូបអុីម៉ូជី",
   "nothingToPreview": "មិនមានអ្វីត្រូវបង្ហាញទេ",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "សើច",
@@ -86,7 +84,6 @@
   "HEART": "ស្រឡាញ់",
   "ROCKET": "រ៉ុកែត",
   "EYES": "ភ្នែក",
-
   "COLLABORATOR": "អ្នករួមសហការ",
   "CONTRIBUTOR": "អ្នករួមចំណែក",
   "FIRST_TIMER": "អ្នកចូលរួមលើកដំបូង",

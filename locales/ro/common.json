@@ -36,7 +36,7 @@
   "loading": "Încărcare",
   "loadingComments": "Încărcare comentarii…",
   "loadingPreview": "Încărcare previzualizare…",
-  "poweredBy": "– oferit de <a>giscus</a>",
+  "poweredBy": "oferit de <a>giscus</a>",
   "oldest": "Vechi",
   "newest": "Nou",
   "showPreviousReplies": {
@@ -67,7 +67,6 @@
   "cancel": "Anulare",
   "signInWithGitHub": "Logare prin GitHub",
   "writeAReply": "Scrie un răspuns",
-
   "upvote": "Upvote",
   "youMustBeSignedInToUpvote": "Trebuie să fii logat pentru a vota favorabil.",
   "addReactions": "Add reactions",
@@ -85,7 +84,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Nimic de previzualizat",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Râset",
@@ -94,7 +92,6 @@
   "HEART": "Iubesc",
   "ROCKET": "Rachetă",
   "EYES": "Ochi",
-
   "COLLABORATOR": "Collaborator",
   "CONTRIBUTOR": "Contributor",
   "FIRST_TIMER": "First-timer",

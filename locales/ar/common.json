@@ -46,7 +46,7 @@
   "loading": "يجري التحميل",
   "loadingComments": "تحميل التعليقات…",
   "loadingPreview": "تحميل المعاينة…",
-  "poweredBy": "– تعمل بواسطة <a>giscus</a>",
+  "poweredBy": "تعمل بواسطة <a>giscus</a>",
   "oldest": "اﻷقدم",
   "newest": "اﻷحدث",
   "showPreviousReplies": {
@@ -81,7 +81,6 @@
   "cancel": "إلغاء",
   "signInWithGitHub": "سجل الدخول بواسطة جيت هب",
   "writeAReply": "اكتب ردًا",
-
   "upvote": "تأييد",
   "youMustBeSignedInToUpvote": "يجب تسجيل الدخول لتتمكن من التأييد.",
   "addReactions": "أضف تفاعل",
@@ -101,7 +100,6 @@
   },
   "emoji": "ايموجي",
   "nothingToPreview": "لا شيء لعرضه",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "ضحك",
@@ -110,7 +108,6 @@
   "HEART": "حب",
   "ROCKET": "صاروخ",
   "EYES": "أعين",
-
   "COLLABORATOR": "متعاون",
   "CONTRIBUTOR": "مساهم",
   "FIRST_TIMER": "مرة أولى",

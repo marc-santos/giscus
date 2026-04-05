@@ -31,7 +31,7 @@
   "loading": "Indlæser",
   "loadingComments": "Indlæser kommentarer…",
   "loadingPreview": "Indlæser forhåndsvisning…",
-  "poweredBy": "- drevet af <a>giscus</a>",
+  "poweredBy": "drevet af <a>giscus</a>",
   "oldest": "Ældste",
   "newest": "Nyeste",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Annuller",
   "signInWithGitHub": "Log ind med GitHub",
   "writeAReply": "Skriv et svar",
-
   "upvote": "Stem op",
   "youMustBeSignedInToUpvote": "Du skal være logget ind for at stemme op.",
   "addReactions": "Tilføj reaktioner",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Intet at forhåndsvise",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Grin",
@@ -86,7 +84,6 @@
   "HEART": "Hjerte",
   "ROCKET": "Raket",
   "EYES": "Øjne",
-
   "COLLABORATOR": "Samarbejdspartner",
   "CONTRIBUTOR": "Contributor",
   "FIRST_TIMER": "First-timer",

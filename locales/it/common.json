@@ -31,7 +31,7 @@
   "loading": "Carico",
   "loadingComments": "Carico commenti…",
   "loadingPreview": "Carico anteprima…",
-  "poweredBy": "– da <a>giscus</a>",
+  "poweredBy": "da <a>giscus</a>",
   "oldest": "Vecchio",
   "newest": "Recente",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Annulla",
   "signInWithGitHub": "Accedi con GitHub",
   "writeAReply": "Scrivi una risposta",
-
   "upvote": "Upvote",
   "youMustBeSignedInToUpvote": "Devi accedere per votare.",
   "addReactions": "Aggiungi reazioni",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Niente da vedere in anteprima",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Risata",
@@ -86,7 +84,6 @@
   "HEART": "Adoro",
   "ROCKET": "Spaziale",
   "EYES": "Interessato",
-
   "COLLABORATOR": "Collaboratore",
   "CONTRIBUTOR": "Collaboratore",
   "FIRST_TIMER": "Nuovo",

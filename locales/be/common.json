@@ -41,7 +41,7 @@
   "loading": "Ладаваньне",
   "loadingComments": "Ладаваньне камэнтароў…",
   "loadingPreview": "Ладаваньне прагляду…",
-  "poweredBy": "– сілкуецца ад <a>giscus</a>",
+  "poweredBy": "сілкуецца ад <a>giscus</a>",
   "oldest": "Найстарэйшыя",
   "newest": "Найноўшыя",
   "showPreviousReplies": {
@@ -74,7 +74,6 @@
   "cancel": "Скасаваць",
   "signInWithGitHub": "Увайсьці праз Github",
   "writeAReply": "Адпавесьці",
-
   "upvote": "Голас",
   "youMustBeSignedInToUpvote": "Вы мусіце ўвайсьці, каб прагаласаваць.",
   "addReactions": "Дадаць рэакцыі",
@@ -93,7 +92,6 @@
   },
   "emoji": "эмоджы",
   "nothingToPreview": "Няма чаго пераглядаць",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Сьмех",
@@ -102,7 +100,6 @@
   "HEART": "Сэрца",
   "ROCKET": "Ракета",
   "EYES": "Вочы",
-
   "COLLABORATOR": "Супрацоўнік",
   "CONTRIBUTOR": "Укладнік",
   "FIRST_TIMER": "Навак",

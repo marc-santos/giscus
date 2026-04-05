@@ -31,7 +31,7 @@
   "loading": "Laden",
   "loadingComments": "Laden van opmerkingen...",
   "loadingPreview": "Laden van voorbeeld...",
-  "poweredBy": "– mogelijk gemaakt door <a>giscus</a>",
+  "poweredBy": "mogelijk gemaakt door <a>giscus</a>",
   "oldest": "Oudste",
   "newest": "Nieuwste",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Annuleer",
   "signInWithGitHub": "Log in met GitHub",
   "writeAReply": "Schrijf een antwoord",
-
   "upvote": "Upvote",
   "youMustBeSignedInToUpvote": "Je moet ingelogd zijn om te kunnen upvoten.",
   "addReactions": "Reacties toevoegen",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Niets om voor te tonen",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Lachen",
@@ -86,7 +84,6 @@
   "HEART": "Liefde",
   "ROCKET": "Raket",
   "EYES": "Ogen",
-
   "COLLABORATOR": "Medewerker",
   "CONTRIBUTOR": "Bijdrager",
   "FIRST_TIMER": "Nieuweling",

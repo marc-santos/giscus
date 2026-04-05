@@ -31,7 +31,7 @@
   "loading": "بارگزاری",
   "loadingComments": "بارگزاری دیدگاه‌ها …",
   "loadingPreview": "بارگزاری پیش‌نمایش …",
-  "poweredBy": "– قدرت گرفته از <a>giscus</a>",
+  "poweredBy": "قدرت گرفته از <a>giscus</a>",
   "oldest": "قدیمی‌تر",
   "newest": "جدیدتر",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "انصراف",
   "signInWithGitHub": "وارد شدن با حساب کاربری GitHub",
   "writeAReply": "نوشتن پاسخ",
-
   "upvote": "رای موافق",
   "youMustBeSignedInToUpvote": "برای درج رای موافق باید وارد حساب کاربری شده باشید.",
   "addReactions": "اضافه کردن بازخورد",
@@ -77,7 +76,6 @@
   },
   "emoji": "شکلک",
   "nothingToPreview": "چیزی برای پیش‌نمایش وجود ندارد.",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "خنده",
@@ -86,7 +84,6 @@
   "HEART": "عشق",
   "ROCKET": "راکت",
   "EYES": "چشم‌ها",
-
   "COLLABORATOR": "مشارکت کننده",
   "CONTRIBUTOR": "همکار",
   "FIRST_TIMER": "اولین بار",

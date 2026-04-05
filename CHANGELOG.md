@@ -7,6 +7,13 @@ writing, this is a rolling-release project without any meaningful versioning
 whatsoever. Tags/releases may be created for the sole purpose of documenting
 major updates to the project.
 
+## 2026-04-05
+
+### Added
+
+- Add configurable branding toggle through `data-show-branding` and
+  `showBranding` config updates.
+
 ## 2025-04-21
 
 ### Fixed

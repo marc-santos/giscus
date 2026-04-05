@@ -23,6 +23,7 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
     category,
     strict,
     reactionsEnabled,
+    showBranding,
     emitMetadata,
     inputPosition,
     defaultCommentOrder,
@@ -70,7 +71,6 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   );
 
   const shouldCreateDiscussion = data.isNotFound && !number;
-  const shouldShowBranding = !!data.discussion.url;
 
   const shouldShowReplyCount =
     !data.error && !data.isNotFound && !data.isLoading && data.totalReplyCount > 0;
@@ -78,6 +78,8 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   const shouldShowCommentBox =
     (data.isRateLimited && !token) ||
     (!data.isLoading && !data.isLocked && (!data.error || (data.isNotFound && !number)));
+
+  const shouldShowBranding = showBranding && shouldShowCommentBox;
 
   if (data.isLoading) {
     return (
@@ -146,23 +148,6 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
                   })}
                 </h4>
               </>
-            ) : null}
-            {shouldShowBranding ? (
-              <em className="color-text-secondary text-sm">
-                <Trans
-                  i18nKey="common:poweredBy"
-                  components={{
-                    a: (
-                      <a
-                        href="https://giscus.app"
-                        target="_blank"
-                        rel="noreferrer noopener nofollow"
-                        className="link-secondary"
-                      />
-                    ),
-                  }}
-                />
-              </em>
             ) : null}
           </div>
           {data.totalCommentCount > 0 ? (
@@ -251,6 +236,26 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
         </div>
 
         {shouldShowCommentBox && inputPosition !== 'top' ? mainCommentBox : null}
+
+        {shouldShowBranding ? (
+          <div className="-mt-4 text-left leading-tight">
+            <span className="color-text-secondary text-xs">
+              <Trans
+                i18nKey="common:poweredBy"
+                components={{
+                  a: (
+                    <a
+                      href="https://giscus.app"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                      className="link-secondary"
+                    />
+                  ),
+                }}
+              />
+            </span>
+          </div>
+        ) : null}
       </div>
     </div>
   );

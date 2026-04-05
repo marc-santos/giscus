@@ -41,7 +41,7 @@
   "loading": "Načítání",
   "loadingComments": "Načítání komentářů…",
   "loadingPreview": "Načítání náhledu…",
-  "poweredBy": "- poháněno službou <a>giscus</a>",
+  "poweredBy": "poháněno službou <a>giscus</a>",
   "oldest": "Nejstarší",
   "newest": "Nejnovější",
   "showPreviousReplies": {
@@ -74,7 +74,6 @@
   "cancel": "Zrušit",
   "signInWithGitHub": "Přihlásit se přes GitHub",
   "writeAReply": "Odpovědět",
-
   "upvote": "Hlasovat pro",
   "youMustBeSignedInToUpvote": "Pro hlasování se musíte přihlásit.",
   "addReactions": "Přidat reakce",
@@ -93,7 +92,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Nic k náhledu",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Smích",
@@ -102,7 +100,6 @@
   "HEART": "Láska",
   "ROCKET": "Raketa",
   "EYES": "Oči",
-
   "COLLABORATOR": "Spolupracovník",
   "CONTRIBUTOR": "Přispěvatel",
   "FIRST_TIMER": "Začátečník",

@@ -31,7 +31,7 @@
   "loading": "Φόρτωση",
   "loadingComments": "Φόρτωση σχολίων…",
   "loadingPreview": "Φόρτωση προεπισκόπησης",
-  "poweredBy": "– λειτουργεί με <a>giscus</a>",
+  "poweredBy": "λειτουργεί με <a>giscus</a>",
   "oldest": "Παλαιότερα",
   "newest": "Νεότερα",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Άκυρο",
   "signInWithGitHub": "Σύνδεση με GitHub",
   "writeAReply": "Γράψτε μια απάντηση",
-
   "upvote": "Υπερψήφιση",
   "youMustBeSignedInToUpvote": "Πρέπει να είστε συνδεδεμένος για να υπερψηφίσετε.",
   "addReactions": "Προσθέστε αντιδράσεις",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Κενή προεπισκόπηση",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Γέλιο",
@@ -86,7 +84,6 @@
   "HEART": "Αγάπη",
   "ROCKET": "Πύραυλος",
   "EYES": "Μάτια",
-
   "COLLABORATOR": "Συνεργάτης",
   "CONTRIBUTOR": "Συνεισφέρει",
   "FIRST_TIMER": "Πρωτάρης",

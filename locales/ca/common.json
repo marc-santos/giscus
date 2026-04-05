@@ -31,7 +31,7 @@
   "loading": "Carregant",
   "loadingComments": "Carregant comentaris…",
   "loadingPreview": "Carregant vista prèvia…",
-  "poweredBy": "– Desenvolupat per <a>giscus</a>",
+  "poweredBy": "Desenvolupat per <a>giscus</a>",
   "oldest": "Antic",
   "newest": "Nou",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Cancel·lar",
   "signInWithGitHub": "Iniciar sessió amb GitHub",
   "writeAReply": "Escriure una resposta",
-
   "upvote": "Vots a favor",
   "youMustBeSignedInToUpvote": "Has d'iniciar sessió per votar.",
   "addReactions": "Afegir reaccions",
@@ -77,7 +76,6 @@
   },
   "emoji": "Emoji",
   "nothingToPreview": "Res a previsualitzar",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Riure",
@@ -86,7 +84,6 @@
   "HEART": "Amor",
   "ROCKET": "Coet",
   "EYES": "Ulls",
-
   "COLLABORATOR": "Col·laborador",
   "CONTRIBUTOR": "Contribuent",
   "FIRST_TIMER": "Principiant",

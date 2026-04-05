@@ -31,7 +31,7 @@
   "loading": "Yükleniyor",
   "loadingComments": "Yorumlar yükleniyor…",
   "loadingPreview": "Önizleme yükleniyor…",
-  "poweredBy": "– <a>giscus</a> tarafından sağlanıyor",
+  "poweredBy": "<a>giscus</a> tarafından sağlanıyor",
   "oldest": "En eski",
   "newest": "En yeni",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "İptal",
   "signInWithGitHub": "GitHub ile giriş yap",
   "writeAReply": "Cevap yaz",
-
   "upvote": "Beğen",
   "youMustBeSignedInToUpvote": "Oy vermek için giriş yapmış olmalısın.",
   "addReactions": "Tepki ekle",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Görüntüleyecek bir şey yok",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Kahkaha",
@@ -86,7 +84,6 @@
   "HEART": "Kalp",
   "ROCKET": "Roket",
   "EYES": "Gözler",
-
   "COLLABORATOR": "İşbirlikçi",
   "CONTRIBUTOR": "Katkıcı",
   "FIRST_TIMER": "İlk-sefer",

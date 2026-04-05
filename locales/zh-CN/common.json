@@ -21,7 +21,7 @@
   "loading": "加载中",
   "loadingComments": "正在加载评论……",
   "loadingPreview": "正在加载预览……",
-  "poweredBy": "– 由 <a>giscus</a> 提供支持",
+  "poweredBy": "由 <a>giscus</a> 提供支持",
   "oldest": "最早",
   "newest": "最新",
   "showPreviousReplies": {
@@ -46,7 +46,6 @@
   "cancel": "取消",
   "signInWithGitHub": "使用 GitHub 登录",
   "writeAReply": "回复",
-
   "upvote": "赞同",
   "youMustBeSignedInToUpvote": "登录后可赞同。",
   "addReactions": "添加回应",
@@ -61,7 +60,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "无预览内容",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "大笑",
@@ -70,7 +68,6 @@
   "HEART": "爱了",
   "ROCKET": "太快啦",
   "EYES": "围观",
-
   "COLLABORATOR": "合作者",
   "CONTRIBUTOR": "贡献者",
   "FIRST_TIMER": "初次贡献者",

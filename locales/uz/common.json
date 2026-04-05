@@ -31,7 +31,7 @@
   "loading": "Yuklanmoqda",
   "loadingComments": "Izohlar yuklanmoqda…",
   "loadingPreview": "Ko'rishni yuklanmoqda…",
-  "poweredBy": "– <a>giscus</a> tomonidan taqdim etilgan",
+  "poweredBy": "<a>giscus</a> tomonidan taqdim etilgan",
   "oldest": "Eng qadimgi",
   "newest": "Eng yangi",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Bekor qilish",
   "signInWithGitHub": "GitHub orqali kirish",
   "writeAReply": "Javob yozish",
-
   "upvote": "Yoqimli",
   "youMustBeSignedInToUpvote": "Yoqimli berish uchun kirish kerak.",
   "addReactions": "Reaksiyalar qo'shish",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Ko'rish uchun hech narsa yo'q",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Kulgi",
@@ -86,7 +84,6 @@
   "HEART": "Yurak",
   "ROCKET": "Raketa",
   "EYES": "Ko'zlar",
-
   "COLLABORATOR": "Hamkor",
   "CONTRIBUTOR": "Hissa qo'shuvchi",
   "FIRST_TIMER": "Birinchi marta",

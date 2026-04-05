@@ -22,6 +22,9 @@ import { env, meta } from '../lib/variables';
 import fallbacks from '../i18n.fallbacks.json';
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  const authorRepoWithOwner = 'marc-santos/giscus';
+  const fallbackCreatedAt = '2026-04-05T21:10:00+10:00';
+  const fallbackCommitUrl = `https://github.com/${authorRepoWithOwner}`;
   const localeSuffix = locale === 'en' ? '' : `.${fallbacks[locale] ?? locale}`;
   const t = await getT(locale, 'config');
 
@@ -32,20 +35,36 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
 
   contents[1] = `${afterConfig}\n## ${t('tryItOut')} 👇👇👇\n`;
 
+  const latestCommitDatePromise = fetch(
+    `https://api.github.com/repos/${authorRepoWithOwner}/commits?per_page=1`,
+  )
+    .then((response) => {
+      if (!response.ok) throw new Error(`Failed to fetch latest commit: ${response.status}`);
+      return response.json() as Promise<
+        Array<{ commit?: { committer?: { date?: string } }; html_url?: string }>
+      >;
+    })
+    .then((commits) => ({
+      createdAt: commits[0]?.commit?.committer?.date || fallbackCreatedAt,
+      commitUrl: commits[0]?.html_url || fallbackCommitUrl,
+    }))
+    .catch(() => ({ createdAt: fallbackCreatedAt, commitUrl: fallbackCommitUrl }));
+
   const token = await getAppAccessToken(env.demo_repo).catch(() => '');
   const [contentBefore, contentAfter] = await Promise.all(
     contents.map((section) => renderMarkdown(section, token, env.demo_repo)),
   );
+  const latestCommitData = await latestCommitDatePromise;
 
   const comment: IComment = {
     author: {
-      avatarUrl: 'https://avatars.githubusercontent.com/in/106117',
-      login: 'giscus',
-      url: 'https://github.com/apps/giscus',
+      avatarUrl: 'https://avatars.githubusercontent.com/u/43739539?v=4',
+      login: 'marc-santos',
+      url: 'https://github.com/marc-santos',
     },
     authorAssociation: 'APP',
     bodyHTML: contentBefore,
-    createdAt: '2021-05-15T13:21:14Z',
+    createdAt: latestCommitData.createdAt,
     deletedAt: null,
     id: 'onboarding',
     isMinimized: false,
@@ -57,7 +76,7 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
     replies: [],
     replyCount: 0,
     upvoteCount: 0,
-    url: 'https://github.com/giscus/giscus',
+    url: latestCommitData.commitUrl,
     viewerDidAuthor: false,
     viewerHasUpvoted: false,
     viewerCanUpvote: false,
@@ -85,6 +104,7 @@ export default function Home({
     theme: 'preferred_color_scheme',
     themeUrl: `${env.app_host}/themes/custom_example.css`,
     reactionsEnabled: true,
+    showBranding: true,
     emitMetadata: false,
     lang: locale,
     inputPosition: 'bottom',
@@ -104,6 +124,7 @@ export default function Home({
       setConfig: {
         theme: configTheme,
         reactionsEnabled: directConfig.reactionsEnabled,
+        showBranding: directConfig.showBranding,
         emitMetadata: directConfig.emitMetadata,
         inputPosition: directConfig.inputPosition,
         lang: directConfig.lang,
@@ -113,6 +134,7 @@ export default function Home({
   }, [
     directConfig.emitMetadata,
     directConfig.reactionsEnabled,
+    directConfig.showBranding,
     directConfig.inputPosition,
     directConfig.lang,
     configTheme,
@@ -129,7 +151,7 @@ export default function Home({
   return (
     <main className="gsc-homepage-bg min-h-screen w-full" data-theme={theme}>
       <Head>
-        <title>giscus</title>
+        <title>Giscussions</title>
         <meta name="giscus:backlink" content={env.app_host} />
         <meta name="description" content={meta.description} />
         <meta property="og:description" content={meta.description} />
@@ -158,21 +180,16 @@ export default function Home({
             data-repo-id={env.demo_repo_id}
             data-category-id={env.demo_category_id}
             data-mapping="specific"
-            data-term="Welcome to giscus!"
+            data-term="Welcome to Giscussions!"
             data-theme="preferred_color_scheme"
             data-reactions-enabled="1"
+            data-show-branding="1"
             data-emit-metadata="0"
             data-input-position="bottom"
             data-lang={locale}
             data-strict="1"
           />
         ) : null}
-        <a
-          className="block w-max mx-auto mb-6"
-          href="https://vercel.com/?utm_source=giscus&utm_campaign=oss"
-        >
-          <img src="/powered-by-vercel.svg" alt="Powered by Vercel" />
-        </a>
       </div>
     </main>
   );

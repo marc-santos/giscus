@@ -41,7 +41,7 @@
   "loading": "Загрузка",
   "loadingComments": "Загрузка комментариев…",
   "loadingPreview": "Загрузка предварительного просмотра…",
-  "poweredBy": "– управляется <a>giscus</a>",
+  "poweredBy": "управляется <a>giscus</a>",
   "oldest": "Старые",
   "newest": "Новые",
   "showPreviousReplies": {
@@ -74,7 +74,6 @@
   "cancel": "Отмена",
   "signInWithGitHub": "Войти через GitHub",
   "writeAReply": "Оставить комментарий",
-
   "upvote": "Проголосовать",
   "youMustBeSignedInToUpvote": "Вы должны авторизоваться, чтобы проголосовать.",
   "addReactions": "Добавить свой отклик",
@@ -93,7 +92,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Предварительный просмотр ничего не содержит",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Смех",
@@ -102,7 +100,6 @@
   "HEART": "Любовь",
   "ROCKET": "Ракета",
   "EYES": "Глаза",
-
   "COLLABORATOR": "Участник",
   "CONTRIBUTOR": "Автор",
   "FIRST_TIMER": "Первый",

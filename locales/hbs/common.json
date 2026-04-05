@@ -41,7 +41,7 @@
   "loading": "Učitavanje",
   "loadingComments": "Učitavanje komentara…",
   "loadingPreview": "Učitavanje pregleda…",
-  "poweredBy": "– pokrenuto preko <a>giscus</a>-a",
+  "poweredBy": "pokrenuto preko <a>giscus</a>-a",
   "oldest": "Najstarije",
   "newest": "Najnovije",
   "showPreviousReplies": {
@@ -74,7 +74,6 @@
   "cancel": "Poništi",
   "signInWithGitHub": "Prijavi se sa Github-om",
   "writeAReply": "Odgovori",
-
   "upvote": "Glasaj",
   "youMustBeSignedInToUpvote": "Morate biti prijavljeni da bi glasali.",
   "addReactions": "Dodaj reakcije",
@@ -93,7 +92,6 @@
   },
   "emoji": "smajli",
   "nothingToPreview": "Ništa nema za pregled",
-
   "THUMBS_UP": "Palac nagore",
   "THUMBS_DOWN": "Palac nadole",
   "LAUGH": "Smešno",
@@ -102,7 +100,6 @@
   "HEART": "Voli",
   "ROCKET": "Raketa",
   "EYES": "Oči",
-
   "COLLABORATOR": "Kolaborator",
   "CONTRIBUTOR": "Kontributor",
   "FIRST_TIMER": "Novajlija",

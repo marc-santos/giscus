@@ -43,6 +43,7 @@
   params.session = session as string;
   params.theme = attributes.theme as string;
   params.reactionsEnabled = attributes.reactionsEnabled || '1';
+  params.showBranding = attributes.showBranding || '1';
   params.emitMetadata = attributes.emitMetadata || '0';
   params.inputPosition = attributes.inputPosition || 'bottom';
   params.repo = attributes.repo as string;

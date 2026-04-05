@@ -31,7 +31,7 @@
   "loading": "Зарежда се",
   "loadingComments": "Коментарите се зареждат…",
   "loadingPreview": "Визуализацията се зарежда…",
-  "poweredBy": "– задвижвано от <a>giscus</a>",
+  "poweredBy": "задвижвано от <a>giscus</a>",
   "oldest": "Най-стари",
   "newest": "Най-нови",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Отказ",
   "signInWithGitHub": "Влизане с GitHub",
   "writeAReply": "Напишете отговор",
-
   "upvote": "Палец нагоре",
   "youMustBeSignedInToUpvote": "Трябва да сте влезли, за да дадете палец нагоре.",
   "addReactions": "Добавяне на реакции",
@@ -77,7 +76,6 @@
   },
   "emoji": "емоджи",
   "nothingToPreview": "Няма нищо за визуализиране",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Смях",
@@ -86,7 +84,6 @@
   "HEART": "Любов",
   "ROCKET": "Ракета",
   "EYES": "Очи",
-
   "COLLABORATOR": "Съмишленик",
   "CONTRIBUTOR": "Сътрудник",
   "FIRST_TIMER": "За първи път",

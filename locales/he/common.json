@@ -31,7 +31,7 @@
   "loading": "בטעינה",
   "loadingComments": "טוען תגובות…",
   "loadingPreview": "טוען תצוגה מקדימה…",
-  "poweredBy": "– מופעל על-ידי <a>giscus</a>",
+  "poweredBy": "מופעל על-ידי <a>giscus</a>",
   "oldest": "ישן ביותר",
   "newest": "חדש ביותר",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "בטל",
   "signInWithGitHub": "התחבר באמצעות GitHub",
   "writeAReply": "השב",
-
   "upvote": "הצבע בעד",
   "youMustBeSignedInToUpvote": "יש להתחבר בכדי להצביע בעד.",
   "addReactions": "הוסף סמלונים",
@@ -77,7 +76,6 @@
   },
   "emoji": "סמלון",
   "nothingToPreview": "אין תצוגה מקדימה",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "צחוק",
@@ -86,7 +84,6 @@
   "HEART": "אהבה",
   "ROCKET": "טיל",
   "EYES": "עיניים",
-
   "COLLABORATOR": "משתף פעולה",
   "CONTRIBUTOR": "תורם",
   "FIRST_TIMER": "פעם-ראשונה",

@@ -31,7 +31,7 @@
   "loading": "Kargatzen",
   "loadingComments": "Iruzkinak kargatzen…",
   "loadingPreview": "Aurrebista kargatzen…",
-  "poweredBy": "– <a>Giscus</a>-ek garatua",
+  "poweredBy": "<a>Giscus</a>-ek garatua",
   "oldest": "Zaharrena",
   "newest": "Berriena",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Utzi",
   "signInWithGitHub": "Saioa hasi GitHub bidez",
   "writeAReply": "Erantzun bat idatzi",
-
   "upvote": "Aldeko botoa eman",
   "youMustBeSignedInToUpvote": "Aldeko botoa emateko saioa hasi behar duzu.",
   "addReactions": "Gehitu erreakzioak",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Ezer ez aurreukusteko",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Barrea",
@@ -86,7 +84,6 @@
   "HEART": "Bihotza",
   "ROCKET": "Suziria",
   "EYES": "Begiak",
-
   "COLLABORATOR": "Kolaboratzailea",
   "CONTRIBUTOR": "Laguntzailea",
   "FIRST_TIMER": "Hasiberria",

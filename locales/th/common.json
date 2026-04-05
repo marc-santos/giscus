@@ -21,7 +21,7 @@
   "loading": "กำลังโหลด",
   "loadingComments": "กำลังโหลดความคิดเห็น…",
   "loadingPreview": "กำลังโหลดตัวอย่าง…",
-  "poweredBy": "– ขับเคลื่อนด้วย <a>giscus</a>",
+  "poweredBy": "ขับเคลื่อนด้วย <a>giscus</a>",
   "oldest": "เก่าที่สุด",
   "newest": "ใหม่ที่สุด",
   "showPreviousReplies": {
@@ -46,7 +46,6 @@
   "cancel": "ยกเลิก",
   "signInWithGitHub": "เข้าสู่ระบบด้วย GitHub",
   "writeAReply": "เขียนการตอบกลับ",
-
   "upvote": "โหวต",
   "youMustBeSignedInToUpvote": "คุณต้องเข้าสู่ระบบเพื่อโหวต",
   "addReactions": "เพิ่มรีแอคชัน",
@@ -61,7 +60,6 @@
   },
   "emoji": "อิโมจิ",
   "nothingToPreview": "ไม่มีอะไรให้แสดงตัวอย่าง",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "หัวเราะ",
@@ -70,7 +68,6 @@
   "HEART": "รัก",
   "ROCKET": "จรวด",
   "EYES": "ตา",
-
   "COLLABORATOR": "ผู้ร่วมงาน",
   "CONTRIBUTOR": "ผู้มีส่วนร่วม",
   "FIRST_TIMER": "ครั้งแรก",

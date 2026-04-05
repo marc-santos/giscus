@@ -31,7 +31,7 @@
   "loading": "Đang tải",
   "loadingComments": "Đang tải thêm bình luận…",
   "loadingPreview": "Đang tải bản xem trước…",
-  "poweredBy": "– powered by <a>giscus</a>",
+  "poweredBy": "powered by <a>giscus</a>",
   "oldest": "Cũ",
   "newest": "Mới",
   "showPreviousReplies": {
@@ -60,7 +60,6 @@
   "cancel": "Huỷ",
   "signInWithGitHub": "Đăng nhập bằng GitHub",
   "writeAReply": "Viết trả lời",
-
   "upvote": "Ủng hộ",
   "youMustBeSignedInToUpvote": "Bạn phải đăng nhập để ủng hộ.",
   "addReactions": "Thêm cảm xúc",
@@ -77,7 +76,6 @@
   },
   "emoji": "emoji",
   "nothingToPreview": "Không có gì để xem trước",
-
   "THUMBS_UP": "+1",
   "THUMBS_DOWN": "-1",
   "LAUGH": "Cười",
@@ -86,7 +84,6 @@
   "HEART": "Trái tim",
   "ROCKET": "Tên Lửa",
   "EYES": "Mắt",
-
   "COLLABORATOR": "Cộng tác viên",
   "CONTRIBUTOR": "Người đóng góp",
   "FIRST_TIMER": "Người mới",
