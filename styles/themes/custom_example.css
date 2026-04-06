@@ -97,6 +97,7 @@ main .pagination-loader-container {
 
 /*! Custom CSS */
 
+/* Reactions now appear inline in the header metadata row. */
 .gsc-reactions-count {
   display: none;
 }
@@ -109,17 +110,24 @@ main .pagination-loader-container {
   padding-bottom: 1rem;
 }
 
-.gsc-comments > .gsc-header {
+.gsc-comments>.gsc-header {
   order: 1;
 }
 
-.gsc-comments > .gsc-comment-box {
+.gsc-comments>.gsc-comment-box {
   order: 2;
   margin-bottom: 1rem;
 }
 
-.gsc-comments > .gsc-timeline {
+.gsc-comments>.gsc-timeline {
   order: 3;
+}
+
+/* Keep a tight header-to-content rhythm with the current layout flow. */
+.gsc-comments>.gsc-header+.gsc-timeline,
+.gsc-comments>.gsc-header+.gsc-comment-box,
+.gsc-comments>.gsc-header+.gsc-timeline.hidden+.gsc-comment-box {
+  margin-top: -0.75rem;
 }
 
 .gsc-homepage-bg {

@@ -23,6 +23,7 @@ This is **Giscussions**, a fork focused on maintaining upstream compatibility wh
 
 - Configurable branding visibility via `data-show-branding` / `showBranding`
 - Author labels prefer display names when available, with username fallback
+- Reactions are shown inline in the comment header metadata row
 
 ---
 
@@ -33,6 +34,8 @@ This is **Giscussions**, a fork focused on maintaining upstream compatibility wh
 **Changed**
 
 - Prefer comment and reply author display names in the UI, with username fallback and secondary handle display when applicable
+- Move discussion reactions into the comment metadata header, next to comment/reply counts
+- Refine header link/typography hierarchy and tighten header-to-content spacing across thread states
 
 **Fixed**
 

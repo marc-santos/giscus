@@ -75,11 +75,15 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   const shouldShowReplyCount =
     !data.error && !data.isNotFound && !data.isLoading && data.totalReplyCount > 0;
 
+  const shouldShowGenericError = data.error && !data.backData;
+
   const shouldShowCommentBox =
     (data.isRateLimited && !token) ||
     (!data.isLoading && !data.isLocked && (!data.error || (data.isNotFound && !number)));
 
   const shouldShowBranding = showBranding && shouldShowCommentBox;
+  const shouldShowReactions =
+    reactionsEnabled && !data.isLoading && (shouldCreateDiscussion || !data.error);
 
   if (data.isLoading) {
     return (
@@ -92,47 +96,20 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
 
   return (
     <div className="color-text-primary gsc-main">
-      {reactionsEnabled && !data.isLoading && (shouldCreateDiscussion || !data.error) ? (
-        <div className="gsc-reactions">
-          <h4 className="gsc-reactions-count">
-            {shouldCreateDiscussion && !data.reactionCount ? (
-              t('reactions', { count: 0 })
-            ) : (
-              <a
-                href={data.discussion.url}
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                className="color-text-primary"
-              >
-                {t('reactions', { count: data.reactionCount || 0 })}
-              </a>
-            )}
-          </h4>
-          <div className="flex flex-auto items-center justify-center gap-2 text-sm mt-2">
-            <ReactButtons
-              subjectId={data.discussion.id}
-              reactionGroups={data.discussion.reactions}
-              onReact={updateReactions}
-              onDiscussionCreateRequest={handleDiscussionCreateRequest}
-            />
-          </div>
-        </div>
-      ) : null}
-
       <div className="gsc-comments">
         <div className="gsc-header">
           <div className="gsc-left-header">
             <h4 className="gsc-comments-count">
               {shouldCreateDiscussion && !data.totalCommentCount ? (
                 t('comments', { count: 0 })
-              ) : data.error && !data.backData ? (
+              ) : shouldShowGenericError ? (
                 t('genericError', { message: data.error?.message || '' })
               ) : (
                 <a
                   href={data.discussion.url}
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  className="color-text-primary underline"
+                  className="color-text-primary gsc-header-link"
                 >
                   {t('comments', { count: data.totalCommentCount })}
                 </a>
@@ -147,6 +124,26 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
                     plus: data.numHidden > 0 ? '+' : '',
                   })}
                 </h4>
+              </>
+            ) : null}
+            {shouldShowReactions ? (
+              <>
+                <h4 className="gsc-comments-count-separator">·</h4>
+                <div className="gsc-header-reactions">
+                  <h4 className="gsc-reactions-count">
+                    {shouldCreateDiscussion && !data.reactionCount
+                      ? t('reactions', { count: 0 })
+                      : t('reactions', { count: data.reactionCount || 0 })}
+                  </h4>
+                  <div className="gsc-reactions">
+                    <ReactButtons
+                      subjectId={data.discussion.id}
+                      reactionGroups={data.discussion.reactions}
+                      onReact={updateReactions}
+                      onDiscussionCreateRequest={handleDiscussionCreateRequest}
+                    />
+                  </div>
+                </div>
               </>
             ) : null}
           </div>

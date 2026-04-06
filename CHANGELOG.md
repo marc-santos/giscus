@@ -14,6 +14,15 @@ major updates to the project.
 - Prefer comment and reply author display names in the UI, with username
   fallback and secondary handle display when applicable.
 
+- Move discussion reactions into the comment metadata header, next to the
+  comment and reply counts.
+
+- Refine header interaction and typography hierarchy by keeping the comments
+  count as the primary header link and treating reactions as inline metadata.
+
+- Tighten spacing between the comments header and the following timeline/comment
+  box across top-input, bottom-input, and empty-thread states.
+
 ### Fixed
 
 - Query author display names through schema-safe GraphQL actor fragments for

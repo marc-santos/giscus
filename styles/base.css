@@ -11,7 +11,8 @@
   border-color: var(--color-border-default, var(--color-border-primary));
 }
 
-:host, html {
+:host,
+html {
   --font-family-sans: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-family-monospace: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
   --font-family-default: var(--font-family-sans);
@@ -19,7 +20,14 @@
   font-family: var(--font-family-default);
 }
 
-code, kbd, pre, samp, .gsc-is-fixed-width, .commit-tease-sha, .blob-code-inner, .blob-num {
+code,
+kbd,
+pre,
+samp,
+.gsc-is-fixed-width,
+.commit-tease-sha,
+.blob-code-inner,
+.blob-num {
   font-family: var(--font-family-monospace);
 }
 
@@ -41,7 +49,7 @@ details summary {
   @apply cursor-pointer;
 }
 
-@media screen and (width <= 320px) {
+@media screen and (width <=320px) {
   html {
     font-size: 5vw;
   }
@@ -182,10 +190,8 @@ details summary {
 }
 
 .BtnGroup {
-  background-color: var(
-    --color-segmented-control-bg,
-    var(--color-canvas-subtle, var(--color-bg-secondary))
-  );
+  background-color: var(--color-segmented-control-bg,
+      var(--color-canvas-subtle, var(--color-bg-secondary)));
 
   @apply inline-flex items-center align-middle rounded-md;
 }
@@ -197,14 +203,10 @@ details summary {
 .BtnGroup-item.BtnGroup-item--selected {
   @apply font-semibold;
 
-  background-color: var(
-    --color-segmented-control-button-bg,
-    var(--color-btn-bg)
-  );
-  border-color: var(
-    --color-segmented-control-button-selected-border,
-    var(--color-border-default, var(--color-border-primary))
-  );
+  background-color: var(--color-segmented-control-button-bg,
+      var(--color-btn-bg));
+  border-color: var(--color-segmented-control-button-selected-border,
+      var(--color-border-default, var(--color-border-primary)));
 }
 
 .BtnGroup-item .btn {
@@ -228,10 +230,8 @@ details summary {
 .BtnGroup-item .btn:hover {
   @apply border-transparent;
 
-  background-color: var(
-    --color-action-list-item-default-hover-bg,
-    var(--color-btn-hover-bg)
-  );
+  background-color: var(--color-action-list-item-default-hover-bg,
+      var(--color-btn-hover-bg));
 }
 
 .BtnGroup-item.BtnGroup-item--selected .btn:hover {
@@ -428,10 +428,11 @@ details summary {
 
 .ClipboardButton:focus,
 .snippet-clipboard-content:hover .ClipboardButton,
-.highlight:hover .ClipboardButton, {
-  @apply opacity-100;
+.highlight:hover .ClipboardButton,
+{
+@apply opacity-100;
 
-  animation: fade-in 0.2s both;
+animation: fade-in 0.2s both;
 }
 
 img.emoji {
@@ -507,7 +508,7 @@ img.emoji {
   transform: scaleX(1.5) scaleY(1.5);
 }
 
-.gsc-reply:first-child > .gsc-tl-line {
+.gsc-reply:first-child>.gsc-tl-line {
   top: 16px;
   height: calc(100% - 16px);
 }
@@ -529,27 +530,46 @@ img.emoji {
 }
 
 .gsc-reactions {
-  @apply flex flex-col justify-center flex-auto;
+  @apply flex flex-wrap items-center gap-2;
 }
 
 .gsc-reactions-count {
-  @apply font-semibold text-center;
+  @apply font-normal;
 }
 
 .gsc-comments {
   @apply flex flex-col gap-6;
 }
 
+.gsc-comments>.gsc-header+.gsc-timeline,
+.gsc-comments>.gsc-header+.gsc-comment-box,
+.gsc-comments>.gsc-header+.gsc-timeline.hidden+.gsc-comment-box {
+  @apply -mt-3;
+}
+
 .gsc-header {
-  @apply flex items-center flex-auto gap-2;
+  @apply flex flex-wrap items-center gap-2;
 }
 
 .gsc-left-header {
-  @apply flex flex-wrap items-center flex-auto whitespace-nowrap gap-2;
+  @apply flex flex-wrap items-center flex-auto min-w-0 gap-2;
 }
 
-.gsc-comments-count,
-.gsc-comments-count-separator {
+.gsc-header-reactions {
+  @apply flex flex-wrap items-center gap-2 min-w-0;
+}
+
+.gsc-header-link {
+  text-decoration: none;
+  text-underline-offset: 0.15em;
+}
+
+.gsc-header-link:hover,
+.gsc-header-link:focus-visible {
+  text-decoration: underline;
+}
+
+.gsc-comments-count {
   @apply font-semibold;
 }
 
@@ -583,7 +603,8 @@ img.emoji {
   @apply px-4 py-2 border-b;
 }
 
-.gsc-comment-footer, .gsc-reply-footer {
+.gsc-comment-footer,
+.gsc-reply-footer {
   @apply flex content-center justify-between mb-3 gap-2;
 }
 
